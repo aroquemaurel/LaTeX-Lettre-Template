@@ -1,0 +1,34 @@
+\documentclass[11pt]{lettre}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{eurosym}
+\usepackage{lipsum}
+
+
+\makeatletter
+\newcommand*{\NoRule}{\renewcommand*{\rule@length}{0}}
+\makeatother
+
+\begin{document}
+%
+\begin{letter}{Destinataire\\~\\
+76 Rue Machin Truc\\
+31000 VILLE TRUC\\
+}
+\date{\today{}} 
+\NoRule
+\vspace{-100px}
+%
+\conc{Super objet de la mort}
+%\vref{Références de la lettre, du point de vue de votre interlocuteur} 
+
+\opening{Madame, Monsieur,}
+\lipsum[1]
+
+\closing{Je vous prie de croire, Madame, Monsieur, à l'assurance de ma considération distinguée}
+\encl{Pièce jointe}
+\end{letter}
+\end{document} 
+
